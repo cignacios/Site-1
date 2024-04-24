@@ -1,0 +1,23 @@
+.searchcontainer{
+    background-color: var(--blueDark);
+    form{
+        padding: 2rem 4rem;
+        select{
+            border-radius: 40px;
+            padding: 12px 15px;
+        }
+        .alllink{
+            text-align: center;
+            padding-top: 1.5rem;
+            button{
+                color: #fff!important;
+                font-size: 1.8rem!important;
+            }
+        }
+    }
+}
+
+
+@media(min-width:768px){
+
+}

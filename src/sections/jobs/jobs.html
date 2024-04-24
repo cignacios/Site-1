@@ -1,0 +1,25 @@
+<div class="jobscontainer">
+    <h2 class="joblegend">Jobs at JLR</h2>
+    <div class="jwrapper">
+
+        <div class="card"  v-for="job in jobs" :key="job.id" >
+            <div class="card-body">
+                <div class="row">
+                    <h1>{{job.job}}</h1>
+                    <p>{{job.description}}</p>
+                </div>
+                <div class="row">
+                    <div class="col-6 btn-l">
+                        <p class="text-capitalize"><span>Location: </span>{{job.location}}</p>
+                        <p class="text-capitalize"><span>Role: </span>{{job.role}}</p>
+                    </div>
+                    <div class="col-6 btn-c">
+                    <button class="btn btn-primary" @click.prevent="getsingleJOB(job.id)" >Apply to this job</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,30 @@
+
+    <div class="searchcontainer">
+    <form>{{selected}}
+        <div class="row g-3 justify-content-center">
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
+                <label for="colFormLabelSm" class="text-white col-form-label fs-3 fw-bold">Locations:</label>
+                    <select class="form-select" id="floatingSelect1" aria-label="Floating label select example" @change="updateSelectedValue()">
+                      <option value="null" >Pick a Location</option>
+                      <option value="USA">USA</option>
+                      <option value="NICARAGUA">NICARAGUA</option>
+                      <option value="COLOMBIA">COLOMBIA</option>
+                    </select>
+                  
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4 col-xl-3">
+                <label for="colFormLabelSm" class="text-white col-form-label fs-3 fw-bold">Job Title:</label>
+                <select class="form-select" id="floatingSelect2" aria-label="Floating label select example" @change="updateSelectedValue2()" >
+                    <option value="null" >Pick a Job Title</option>
+                    <option value="DOCTOR">DOCTOR</option>
+                    <option value="CALL_CENTER_AGENT">CALL CENTER AGENT</option>
+                    <option value="SUPPORT_ROLE">SUPPORT ROLE</option>
+                  </select>
+            </div>
+          </div>
+        <div class="alllink">
+            <button  class="btn btn-link fw-bold" @click.prevent="allj" >View All Jobs</button>
+        </div>
+      </form>
+</div>
+
